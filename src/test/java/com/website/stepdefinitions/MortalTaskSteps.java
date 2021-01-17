@@ -11,6 +11,9 @@ public class MortalTaskSteps {
 		MortalTaskPage.clickSelected("electronics");
 		//MortalTaskPage.ClickProduct("all laptops");
 		MortalTaskPage.specsSelectionMethod("Brand", "Asus");
+		//MortalTaskPage.specsSelectionMethod("ram", "160");
+		
+		
 	}
 
 	@Given("user selects the specs")

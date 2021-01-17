@@ -1,4 +1,3 @@
-
 #Author: your.email@your.domain.com
 #Keywords Summary :
 #Feature: List of scenarios.
@@ -17,29 +16,24 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
 Feature: Title of your feature
   I want to use this template for my feature file
 
- 
-
- #Scenario: Checking the All Deals menu
-  #Given user clicks the todys deals text
-  #Then  user selects all the departments
-  
-#DBS Test case   
-# Scenario: Return the travel path of Flight selected
-  # Given  user opens browser and clicks on travel and flights
-#  Then user click on round trip and fills in travel timings
- # And user selects passengers and hits select search
- # Then user selects Tinmings as night and airways as Singapore Airlines
- # And user selects total number of flights available
-#  And user selects first available flight and returns the flight travel details
-
-
-# PayTm Test case
-
+	@amazon @dummy
+  Scenario: Checking the All Deals menu
+    Given user clicks the todys deals text
+    Then user selects all the departments
+    
+	@dbs
+  Scenario: Return the travel path of Flight selected
+    Given user opens browser and clicks on travel and flights
+    Then user click on round trip and fills in travel timings
+    And user selects passengers and hits select search
+    Then user selects Tinmings as night and airways as Singapore Airlines
+    And user selects total number of flights available
+    And user selects first available flight and returns the flight travel details
+	
+	@paytm
   Scenario: paytm assigned scenario
-  Given User opens paytm, select the menu and hits the All laptops
-  Given user selects the specs 
-  
+    Given User opens paytm, select the menu and hits the All laptops
+    Given user selects the specs
